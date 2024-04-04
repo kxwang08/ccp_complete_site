@@ -1,0 +1,457 @@
+/* skip to main */
+.skip-to-content{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+.skip-to-content:focus{
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  
+
+
+
+  
+  /* NAV STYLING           NAV STYLING           NAV STYLING*/
+  
+  .home-icon {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+  /* adds space under nav */
+  nav {
+    margin-bottom: 8%;
+  }
+  /* styles nav so it's on the left and stacked for mobile */
+  .nav-item{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .nav-item a {   /* styles each nav link*/
+    color: #333333;
+    padding: 8px; /* Add padding around the text so there's a gap between nav links*/
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left */
+  }
+
+  nav a:hover {
+    color: #87005c;   /* nav is magenta on hover */
+  }
+
+  nav .active {   /* styles active links */
+    text-decoration: underline;
+    }
+  
+  /* Make each list item full-width so that it's easier to tap on small touch screen*/
+  nav li {
+    width: 100%; 
+  }
+  
+  nav{
+    display: none;
+  }
+
+
+
+
+  
+  /* HAMBURGER MENU STYLING         HAMBURGER MENU STYLING*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #e6dee4;
+    position: relative;
+    vertical-align: middle;
+  }
+
+/* Ensure hamburger menu is visible by default */
+.topnav .icon {
+    display: block;
+}
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+
+  .topnav{  /* margins for the entire hamburger navigation area */
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #333333;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background-color: #333333;
+    color: #e6dee4;
+    display: block;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #333333;
+    color: #e6dee4;
+  }
+  
+  /* Style the active link (or home/logo) */
+  /* .active {
+    text-decoration: underline;
+  } */
+
+  .topnav a.active {
+    text-decoration: underline;
+}
+
+a.icon{
+    vertical-align: middle ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* MEDIA STYLING            MEDIA STYLING           MEDIA STYLING*/
+  
+img{
+    width: 100%;
+    margin-top: 6px;
+    border: solid 1px;
+  }
+  
+.gif-container {
+    display: block;
+    text-align: center;
+  }
+
+  
+  
+  
+  
+  
+  /* TEXT STYLING            TEXT STYLING            TEXT STYLING*/
+  
+  body{
+    line-height: 2.0;
+    background-color: #e6dee4;
+    margin: 0 5% 2% 5%;
+      /* general font styling */
+    color: #333333;
+    font-family: 'paralucent', sans-serif, 'Times New Roman';
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  p {
+    margin-top: 20px; /* Space above each paragraph */
+    margin-bottom: 40px; /* Space below each paragraph */
+  }
+  
+  h1{
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+  
+  h2{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  
+  h3{
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  
+  
+  
+  
+  
+  /* MOBILE GRID STYLING            GRID STYLING            GRID STYLING*/
+  .grid-container {
+    grid-template-columns: 1fr; /* One column for mobile devices */
+    gap: 2;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr; /* One column for mobile devices */
+    gap: 0;
+  }
+  
+  .grid-container > div {
+    padding: 0; /* Reduced padding for grid items on mobile */
+    margin: 0;
+  }
+  
+  .grid-container img{ /* grid image */
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  /* CUSTOM LIST STYLING: using asterisk as bullet point */
+  .custom-ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    margin-left: 8%;
+    margin-bottom: 40px;
+    list-style-type: "✱ ";
+  }
+  
+  .custom-ol {
+    list-style-type: decimal; /* Use decimal for numbered items */
+    margin-left:8%;
+    margin-bottom: 40px;
+  }
+  
+  
+  /*MAP STYLING*/
+  .map-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+
+  
+  /*CHECKBOX STYLING*/
+  /* Customize the label (the container) */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  
+  
+  /* CHECKMARK STYLING*/
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: #ffffff;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  
+  
+  /* A media query to target users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+  
+    /* Hide GIFs or other animations */
+    .gif-container {
+        display: none;
+    }
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+  
+    .custom-checkbox-ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      
+      .custom-checkbox-ul li {
+        width: 50%; /* Each list item takes up half the width of the ul, creating a 2-column layout */
+      }
+    
+    /* styles all grids but the travel one */
+    .grid-container { 
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 30px;
+    }
+  
+    .recipe-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .recipe-grid :nth-child(1){
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .recipe-grid :nth-child(2){
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .recipe-grid :nth-child(3){
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+  }
+
+  
+  
+  /* DESKTOP VIEW*/
+  
+  @media (min-width: 900px) {
+  
+    .recipe-grid :nth-child(1){
+    grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .recipe-grid :nth-child(2){
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .recipe-grid :nth-child(3){
+        grid-area: 1 / 3 / 2 / 4; 
+    }
+
+    .gif-container > img{
+        width: 40%;
+    }
+
+    /* hide hamburger in desktop view */
+    .topnav .icon,
+    .topnav #myLinks,
+    .topnav a {
+      display: none;
+    }
+
+  /*adds margins for everything but the nav */
+    main{
+        margin: 2% 15% 2% 15%;
+  }
+
+
+
+  /* DESKTOP NAV STYLING*/
+  
+  nav {
+    display:block; /* Show the nav because in mobile view, it's set to none and hidden */
+  }
+
+  .nav-item {
+      flex-direction: row; /* Make the nav items align horizontally */
+      justify-content: center; /* Center the items if needed */
+      align-items: center; /* Center the items vertically */
+  }
+  
+  .nav-item li {
+      margin-right: 20%; /* Add margin to the right of each list item */
+  }
+  
+  .nav-item a{ 
+    text-align: center; /* Align text to the center so nav links are centered*/
+  }
+  
+  .nav-item li:last-child {
+      margin-right: 0; /* Remove margin for the last item so "travel" is flush right*/
+  }
+  
+  .grid-container, .recipe-grid{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: left;
+    margin-bottom: 40px;
+  }
+
+
+  
+  }
