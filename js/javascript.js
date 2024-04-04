@@ -10,3 +10,5 @@ function myFunction() {
   }
 
 
+
+document.cookie = "cookieName=value; SameSite=None; Secure";

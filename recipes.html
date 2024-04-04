@@ -14,29 +14,35 @@
     </head>
     <body>
         <a href="#main-content" class="skip-to-content">Skip to Main Content</a>
-        <div class="topnav">
-            <a href="index.html">
-                <img src= "images/home-icon.png" alt="home icon" class="home-icon">
-            <div id="myLinks">
-                <a href="pets.html">Pets</a>
-                <a href="recipes.html" class="active">Recipes</a>
-                <a href="travel.html">Travel</a>
-            </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i>
-        </a>
-
-        <script src="js/javascript.js"></script>
-        </div>
+        
         <header>
             <nav>
+                <div class="topnav">
+                    <a href="index.html">
+                        <img src="images/home-icon.png" alt="home icon" class="home-icon">
+                    </a>
+                    <div id="myLinks">
+                        <a href="pets.html">Pets</a>
+                        <a href="recipes.html" class="active">Recipes</a>
+                        <a href="travel.html">Travel</a>
+                    </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+        
+                <script src="js/javascript.js"></script>
+                </div>
+
+
+                <div class="nav-grid">
                 <ul class="nav-item nav-links">
                     <li><a href = "index.html">Home</a></li>
                     <li><a href = "pets.html">Pets</a></li>
                     <li><a class="active" href = "recipes.html">Recipes</a></li>
                     <li><a href = "travel.html">Travel</a></li>
                 </ul>
+                </div>
             </nav>
         </header>
         <main id="main-content">
@@ -144,7 +150,6 @@
                         <li>Spread the yogurt on the bottom of a plate or platter and arrange roasted carrots on top. Scatter peanuts, sesame seeds, and scallions on top, and finish with flaky salt and a squeeze of lime juice.</li>
                     </ol>
                 </div>
-            </div>
         </main>
     </body>
 </html>
