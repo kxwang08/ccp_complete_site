@@ -73,62 +73,58 @@
   padding: 0;
 }
 
-/* hide the links by default, only shows when hamburger icon is clicked */
-.topnav #myLinks {
-  display: none;
-}
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav {
-  overflow: hidden;
-  background-color: #e6dee4;
-  position: relative;
-  vertical-align: middle;
-}
+  .topnav {
+    overflow: hidden;
+    background-color: #e6dee4;
+    position: relative;
+    vertical-align: middle;
+  }
 
 /* Ensure hamburger menu is visible by default */
 .topnav .icon {
-  display: block;
+    display: block;
 }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
 
+  .topnav{  /* margins for the entire hamburger navigation area */
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 
-.topnav{  /* margins for the entire hamburger navigation area */
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-
-/* .topnav #myLinks {
-  display: block;
-} */
-
-/* Style navigation menu links */
-.topnav a {
-  color: #333333;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background-color: #333333;
-  color: #e6dee4;
-  display: block;
-  position: absolute;
-  align-items: center;
-  right: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #333333;
-  color: #e6dee4;
-}
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #333333;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background-color: #333333;
+    color: #e6dee4;
+    display: block;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #333333;
+    color: #e6dee4;
+  }
+  
 
 /* Style the active link (or home/logo) */
 /* .active {
