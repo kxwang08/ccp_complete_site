@@ -122,3 +122,149 @@
   align-items: left;
   margin-bottom: 80px;
 }
+
+
+
+
+.nav-grid {
+  display:block; /* Show the nav because in mobile view, it's set to none and hidden */
+}
+
+.nav-grid .nav-item {
+    flex-direction: row; /* Make the nav items align horizontally */
+    justify-content: center; /* Center the items if needed */
+    align-items: center; /* Center the items vertically */
+}
+
+.nav-grid .nav-item li {
+    margin-right: 20%; /* Add margin to the right of each list item */
+}
+
+.nav-grid .nav-item a{ 
+  text-align: center; /* Align text to the center so nav links are centered*/
+}
+
+.nav-grid .nav-item li:last-child {
+    margin-right: 0; /* Remove margin for the last item so "travel" is flush right*/
+}
+
+.grid-container, .recipe-grid{ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+04/07/24
+
+
+
+  /* NAV STYLING           NAV STYLING           NAV STYLING*/
+  
+  .home-icon {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+  /* adds space under nav */
+  .nav-grid {
+    margin-bottom: 8%;
+  }
+  /* styles nav so it's on the left and stacked for mobile */
+  .nav-grid .nav-item{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .nav-item a {   /* styles each nav link*/
+    color: #333333;
+    padding: 8px; /* Add padding around the text so there's a gap between nav links*/
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left */
+  }
+
+  .nav-grid a:hover {
+    color: #87005c;   /* nav is magenta on hover */
+  }
+
+  .nav-grid .active {   /* styles active links */
+    text-decoration: underline;
+    }
+  
+  /* Make each list item full-width so that it's easier to tap on small touch screen*/
+  .nav-grid li {
+    width: 100%; 
+  }
+  
+  .nav-grid{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* DESKTOP NAV STYLING*/
+  
+
+
+  nav{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Hide hamburger navigation links. */
+.nav-links{
+    /* display: none; */
+    overflow: hidden;
+    background-color: #FEF5EC;
+    position: relative;
+}
+/* Hide nav links within hamburger. */
+.nav-links #myLinks {
+    display: none;
+}
+
+/* Hamburger styling. */
+.nav-links a {
+    color: #3e3c3c;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Position hamburger icon. */
+.nav-links a.icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Hamburger nav hover styling. */
+.nav-links a:hover {
+    background-color: #D1B5A5;
+    color: #3e3c3c;
+}
