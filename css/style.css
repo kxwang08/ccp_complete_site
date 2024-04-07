@@ -73,6 +73,11 @@
   padding: 0;
 }
 
+/* hide the links by default, only shows when hamburger icon is clicked */
+.topnav #myLinks {
+  display: none;
+}
+
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav {
   overflow: hidden;
